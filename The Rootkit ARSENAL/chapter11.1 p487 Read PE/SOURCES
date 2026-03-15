@@ -1,0 +1,10 @@
+TARGETNAME=BASIC
+TARGETPATH=OBJ
+TARGETTYPE=PROGRAM
+UMTYPE=console
+TARGETLIBS=\
+    $(DDK_LIB_PATH)\advapi32.lib \
+    $(DDK_LIB_PATH)\kernel32.lib \
+    $(DDK_LIB_PATH)\user32.lib
+
+SOURCES=	main.c

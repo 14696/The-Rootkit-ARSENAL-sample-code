@@ -1,0 +1,12 @@
+TARGETNAME=IATHookDllmain
+DLLENTRY=DllMain
+DLLDEF=
+TARGETPATH=OBJ
+TARGETTYPE=DYNLINK
+UMTYPE=windows
+TARGETLIBS=\
+    $(DDK_LIB_PATH)\advapi32.lib \
+    $(DDK_LIB_PATH)\kernel32.lib \
+    $(DDK_LIB_PATH)\user32.lib
+
+SOURCES=	dllmain.cpp

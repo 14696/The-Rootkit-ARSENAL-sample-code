@@ -1,0 +1,14 @@
+DLLENTRY=DllMain
+DLLDEF=
+USE_MSVCRT=1
+TARGETNAME=testdll
+TARGETPATH=OBJ
+TARGETTYPE=DYNLINK
+UMTYPE=windows
+
+TARGETLIBS=\
+    $(DDK_LIB_PATH)\advapi32.lib \
+    $(DDK_LIB_PATH)\kernel32.lib \
+    $(DDK_LIB_PATH)\user32.lib
+
+SOURCES=testdll.c
